@@ -8,7 +8,10 @@ class LeapYear:
             answer = True
 
         if year % 100 == 0 and year % 400 != 0:
-            answer = False
+            return False
+
+        if year % 4 == 0 and year % 100 != 0:
+            answer = True
 
         return answer
 
