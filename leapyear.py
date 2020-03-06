@@ -2,4 +2,7 @@ class LeapYear:
 
     @staticmethod
     def leapyear(year):
-        return False
+        if year % 400 == 0:
+            return True
+        else:
+            return False
